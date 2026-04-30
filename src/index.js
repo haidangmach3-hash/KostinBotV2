@@ -393,6 +393,15 @@ log.line();
 // Version info với gradient
 log.gradientTitle('🚀 STARTING KOSTIN BOT V2');
 log.info(`${styles.gray}Version:${styles.reset} ${styles.cyan}Kostin${styles.reset}`);
+
+// Connect to MongoDB
+const { connectDB } = require('./database');
+const dbConnected = await connectDB();
+if (dbConnected) {
+  log.success(`Database connected ${styles.green}✓${styles.reset}`);
+} else {
+  log.warn(`Database connection failed - some features may not work`);
+}
 log.info(`${styles.gray}Node.js:${styles.reset} ${styles.green}${process.version}${styles.reset}`);
 log.info(`${styles.gray}Platform:${styles.reset} ${styles.yellow}${process.platform}${styles.reset}`);
 log.line();
