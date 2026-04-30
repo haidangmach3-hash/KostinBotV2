@@ -1,0 +1,27 @@
+{
+  "name": "kostin-bot-v2",
+  "version": "1.0.0",
+  "description": "Discord Bot with Slash Commands",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node src/index.js",
+    "deploy": "node src/deploy-commands.js",
+    "deploy-global": "node src/deploy-commands.js global"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "discord.js"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^14.14.1",
+    "dotenv": "^16.3.1",
+    "mongoose": "^9.6.1"
+  },
+  "engines": {
+    "node": ">=16.9.0"
+  }
+}

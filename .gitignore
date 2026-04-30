@@ -1,0 +1,14 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Environment
+.env
+
+# Logs
+logs/
+*.log
+
+# Discord
+node_modules/discord.js/
+node_modules/@discordjs/
